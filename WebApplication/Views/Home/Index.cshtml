@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<Person>
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>
+        @foreach (var item in Model)
+        {
+            <h5 align = "left">First Name: <b>@item.FirstName</b>, Last Name: <b>@item.LastName</b>, Middle Name: <b>@item.MiddleName</b> </h5>
+        }
+    </p>
+</div>
